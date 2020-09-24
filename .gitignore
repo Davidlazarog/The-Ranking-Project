@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.env
+pruebaError.ipynb
+Mongo.ipynb
+prueba.js
+.DS_Store
+.vscode/
+dump/
