@@ -12,52 +12,52 @@ Puedes encontrar la API en el siguiente [enlace.](https://therankingproject.hero
 
 ## URL Params:
 
-### /student/create/<name>
+### /student/create/*input*
 
 Con este Endpoint podemos crear un student dentro de nuestra base de datos. 
 
 **Input**: Nombre del estudiante a crear. 
 
-### /student/search/<name>
+### /student/search/*input*
 
-Con este Endpoint podemos crear un student dentro de nuestra base de datos. 
+    Con este Endpoint podemos crear un student dentro de nuestra base de datos. 
 
-**Input**: Nombre del estudiante que queramos buscar. 
+    **Input**: Nombre del estudiante que queramos buscar. 
 
-### /student/labs/<name>
+### /student/labs/*input*
  
-Con este Endpoint dice que labs ha hecho cada usuario que le metas
+    Con este Endpoint dice que labs ha hecho cada usuario que le metas
 
-**Input**: Nombre del estudiante que queramos buscar. 
+    **Input**: Nombre del estudiante que queramos buscar. 
 
 ### /student/all
 
-Con este Endpoint, visualizaremos todos los estudiantes de Datamad0820
+    Con este Endpoint, visualizaremos todos los estudiantes de Datamad0820
 
-### /student/grades/<name>
+### /student/grades/*input*
 
-Con este Endpoint , podremos visualizar una lista con las notas de cada estudiante. 
-
-
-**Input**: Nombre del estudiante que queramos buscar sus notas. 
-
-### /lab/create/<name>
-
-Con este Endpoint podemos crear un student dentro de nuestra base de datos. 
-
-**Input**: Nombre del lab a crear. 
-
-### /lab/randomeme/<lab>
-
-Con este Endpoint, nos saca un meme aleatorio del las que necesitemos. 
-
-**Input**: Nombre del lab a  buscar información. 
+    Con este Endpoint , podremos visualizar una lista con las notas de cada estudiante. 
 
 
-### /lab/search/<name>
+    **Input**: Nombre del estudiante que queramos buscar sus notas. 
 
-Con este Endpoint, nos saca un análisis estadístico del lab. 
+### /lab/create/*input*
 
-**Input**: Nombre del lab a  buscar información. 
+    Con este Endpoint podemos crear un student dentro de nuestra base de datos. 
+
+    **Input**: Nombre del lab a crear. 
+
+### /lab/randomeme/*input*
+
+    Con este Endpoint, nos saca un meme aleatorio del las que necesitemos. 
+
+    **Input**: Nombre del lab a  buscar información. 
+
+
+### /lab/search/*input*
+
+    Con este Endpoint, nos saca un análisis estadístico del lab. 
+
+    **Input**: Nombre del lab a  buscar información. 
 
 ## 
