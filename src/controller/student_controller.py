@@ -1,7 +1,6 @@
 from src.app import app
 from src.database import db
 from flask import request
-#from ..helpers.json_response import asJsonResponse
 from bson.json_util import dumps
 
 #Crea un nuevo usuario
@@ -26,7 +25,7 @@ def list_students_lab(name):
     project = {'Lab':1}
     result = db.student.find(query, project)
     return dumps(result)
-    
+
 #Te enseña todos los estudiantes 
 @app.route("/student/all")
 def all_students():
@@ -37,7 +36,7 @@ def all_students():
 def grades_student(name):
     query = {'User':name}
     project = {'Nota':1}
-    result = list(db.student.find(query, project)).count()
+    result = list(db.student.find(query, project))
     return f'La nota media de {name} es de {result}'
 
 

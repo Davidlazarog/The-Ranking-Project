@@ -3,7 +3,6 @@ from src.app import app
 from src.database import db
 from flask import request
 from bson.json_util import dumps
-from ..helpers.json_response import asJsonResponseLabs
 from datetime import datetime
 import numpy as np
 
@@ -18,8 +17,8 @@ def create_lab(name):
 @app.route("/lab/randomeme/<lab>")
 def random_meme(lab):
     result=db.student.aggregate([  
-        { "$sample": {"size": 10} }, 
         { "$match":  {"Lab": lab} },
+        { "$sample": {"size": 1} }, 
         { "$project" : { "Meme" : 1, "_id": 0}}
       ])
     return dumps(result)
@@ -50,3 +49,4 @@ def getapi():
     return list(data)
 
 #mongodb+srv://1234:1234@therankingproject.yrlud.mongodb.net/rankingproject
+#docker run -p 5050:5050 --env DBURL="mongodb+srv://1234:1234@therankingproject.yrlud.mongodb.net/RankingProyect?retryWrites=true&w=majority" --env PORT=5050 rankingproject
