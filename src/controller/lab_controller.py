@@ -43,10 +43,23 @@ def searchLab(name):
     }
     return dumps(result)
 
-def getapi():
-    res = requests.get(f"http://localhost:5050/student/all")
-    data = res.json() 
-    return list(data)
+@app.route("/")
+def finalfinal():
+    return '''
+<!DOCTYPE html>
+<html lang="es">
+<center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Amigx!!</title>
+</head>
+<body style="background-color:#32B79D;">
+<h1>Bienvenido a mi API!</h1>
+<h2>Puedes iniciar tu busqueda metiendo uno de los endpoits del README.</h2>
+<img src="https://www.franbosquet.com/wp-content/uploads/ironhack_logonegro.png"/>
+</body>
+</html>
+'''
 
-#mongodb+srv://1234:1234@therankingproject.yrlud.mongodb.net/rankingproject
-#docker run -p 5050:5050 --env DBURL="mongodb+srv://1234:1234@therankingproject.yrlud.mongodb.net/RankingProyect?retryWrites=true&w=majority" --env PORT=5050 rankingproject
+
